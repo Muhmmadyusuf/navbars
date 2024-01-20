@@ -1,101 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- <div class="nav varient-1">
+      <div class="flex">
+        <h1 style="color: white">Navbar</h1>
 
-    <div class="nav varient-1">
-        <div class="flex">
-            <h1 style="color: white;">Navbar</h1>
+        <ul class="list-items">
+          <li style="color: white">
+            <a href="#" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
 
-            <ul class="list-items">
-                <li style="color: white;">
-                    <a href="#" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>   
-            </ul>
-        </div>
+      <div class="input">
+        <input type="search" autocomplete="tel-local" placeholder="Search" />
+        <button>Search</button>
+      </div>
 
-        <div class="input">
-            <input type="search" autocomplete="tel-local" placeholder="Search">
-            <button>Search</button>
-        </div>
+      <div class="burger-menu">☰</div>
     </div>
 
-    <br>
+    <br />
 
     <div class="nav varient-2">
-        <div class="flex">
-            <h1 style="color: white;">Navbar</h1>
+      <div class="flex">
+        <h1 style="color: white">Navbar</h1>
 
-            <ul class="list-items">
-                <li style="color: white;">
-                    <a href="#" >Home</a>
-                </li>
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#" aria-current="page">Pricing</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="list-items">
+          <li style="color: white">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#" aria-current="page">Pricing</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
 
+      <div class="input">
+        <input type="search" placeholder="Search" />
+        <button>Search</button>
+      </div>
+
+      <div class="burger-menu">☰</div>
+    </div> -->
+
+    
+    <div class="nav varient-1">
+      <h1 style="color: white">Navbar</h1>
+      <div class="menu-container hide" id="menuContainer">
+        <ul class="list-items">
+          <li style="color: white">
+            <a href="#" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Pricing</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
         <div class="input">
-            <input type="search" placeholder="Search">
-            <button>Search</button>
+          <input type="search" placeholder="Search" />
+          <button>Search</button>
         </div>
+      </div>
+
+      <div class="burger-menu" onclick="menuContainer.classList.toggle('hide')">
+        ☰
+      </div>
     </div>
 
-    <br>
+    <script>
+      //   screenSize.innerText = innerWidth;
 
-    <div class="nav varient-3">
-        <div class="flex">
-            <h1 style="color: white;">Navbar</h1>
-
-            <ul class="list-items">
-                <li style="color: white;">
-                    <a href="#" aria-current="page">Home</a>
-                </li>
-                <li>
-                    <a href="#">Features</a>
-                </li>
-                <li>
-                    <a href="#">Pricing</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="input">
-            <input type="search" placeholder="Search">
-            <button>Search</button>
-        </div>
-    </div>
-
-
-
-
-
-</body>
-
+      //   onresize = () => {
+      //     screenSize.innerText = innerWidth;
+      //   };
+    </script>
+  </body>
 </html>
